@@ -4,23 +4,32 @@
 }
 
 
-.row {
-    
-    align-content: center;
-   
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-top: 25%;
 }
 
 
+.row{
+
+    padding-left: 16%;
+
+}
+
 .column {
-    
-    float: left;
-    width: 15%;
+   
+    float: inline-start;
+    width: 28%;
     border: 1px solid lightskyblue;
     overflow: hidden;
   }
   
   .row:after {
+    
     content: "";
     display: table;
     clear: both;
   }
+
