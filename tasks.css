@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.row {
+    
+    align-content: center;
+   
+}
+
+
+.column {
+    
+    float: left;
+    width: 15%;
+    border: 1px solid lightskyblue;
+    overflow: hidden;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
