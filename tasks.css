@@ -54,7 +54,7 @@
   .sec3 {
     display: flex;
     flex-direction: row;
-    border: 1px solid darkgray;
+    background-color opacity: 0.1%;
     background-color: darkgray;
     background-position-x: left;
     margin-top: 18%;

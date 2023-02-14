@@ -21,3 +21,11 @@
     display: flex;
     padding-top: 10%;
 }
+
+.calendar {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
