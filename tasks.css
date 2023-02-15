@@ -59,7 +59,7 @@
         margin: 0%;
         padding: 15px;
         overflow: hidden;
-        background-color: rgb(188, 250, 254);
+        background-color: rgb(197, 221, 231);
         position: sticky;
         top: 0%;
     }
@@ -75,13 +75,13 @@
     }
     
     a:hover{
-        background-color: rgb(179, 231, 244);
+        background-color: rgb(166, 203, 217);
     }
     
     
     
     .footercontainer{
-        background-color: rgb(114, 197, 223);
+        background-color: rgb(197, 221, 231);
         bottom: 0%;
         size: 100% 25%;
         margin-top: 2%;
@@ -100,19 +100,19 @@
         margin-bottom: 30px;
         position: relative;
         bottom: 0%;
-        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     }
     
     
     .footer-col li {
-    
+
     padding: 20px;
-    
+
     }
     
     .footer-col ul li a {
-        color: antiquewhite;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         font-size: medium;
     }
@@ -124,7 +124,6 @@
     
     .col1{
     display: block;
-    
-    
+
     }
     
