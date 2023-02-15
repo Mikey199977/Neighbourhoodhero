@@ -1,100 +1,84 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.landimg {
-    background-image: url(/IMAGES/Water\ bottle.jpg);
-    opacity: 85%;
- 
-    min-height: 1200px;
-  
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.head1 {
-
-    display: flex;
-    margin-left: 22%;
-    padding-top: 12%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: bold;
-    opacity: 80%;
-    font-size: 65px;
-
-
+    
 }
 
 
-.search {
-display: flex;
-flex-direction: row;
-margin-left: 25%;
-padding: 18px;
-border: none;
-margin-top: 8px;
-margin-right: 16px;
-font-size: 16px;
-padding-top: 20%%;
-
-
-}
-.btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 40%;
-    opacity: 0.9;
+ .column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    
   }
   
-  .btn:hover {
+
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
     opacity: 1;
   }
-
-.row{
-     display: flex;
-     flex-direction: row ;
-     text-align: center;
-    
-    }
-
-
-.row2 {
-
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.column {
-   float: inline-start;
-    width: 28%;
-    overflow: hidden;
-    
-    
-  }
   
+
   .row:after {
-    
     content: "";
     display: table;
     clear: both;
   }
+  
 
-.sec3 {
-    margin-top: 15%;
-    text-align: center;
-}
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .column .text1 .text2 .text3 .text4 .text5 .text6  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%; 
+    margin-left:11%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
 
 
-  h2{
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  } 
+
+  function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  } 
+
+h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     
@@ -104,7 +88,7 @@ padding-top: 20%%;
         margin: 0%;
         padding: 15px;
         overflow: hidden;
-        background-color: rgb(188, 250, 254);
+        background-color: rgb(132, 214, 220);
         position: sticky;
         top: 0%;
     }
@@ -172,4 +156,3 @@ padding-top: 20%%;
     
     
     }
-    
